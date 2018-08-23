@@ -80,7 +80,7 @@
     ctx.textBaseline = 'bottom';
 
     ctx.translate(width * 0.1, height * 0.9); // margin: 10
-    ctx.rotate(-Math.PI / 12); // 15 degree
+    ctx.rotate(options.rotate * -Math.PI / 180); // 15 degree
     ctx.fillText(text, 0, 0);
 
     return canvas.toDataURL();
